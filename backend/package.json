@@ -1,0 +1,26 @@
+{
+  "name": "hikvision-attendance-backend",
+  "version": "1.0.0",
+  "description": "Node.js Express middleware listener for Hikvision Access Control Terminals syncing to Google Sheets via Apps Script.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "mock": "node mock-device.js"
+  },
+  "keywords": [
+    "hikvision",
+    "attendance",
+    "express",
+    "google-sheets",
+    "google-apps-script",
+    "access-control"
+  ],
+  "author": "Gan Ching Kang",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2",
+    "form-data": "^4.0.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
