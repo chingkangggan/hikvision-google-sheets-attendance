@@ -43,6 +43,43 @@ hikvision-attendance-system/
 
 ---
 
+## Generated Attendance Structure
+
+```text
+Google Drive Root /
+├── [Config Sheet]                                # Configuration file
+└── [Teacher Name] /                              # Teacher Folder
+    └── [Year] /                                  # Year Folder (e.g., 2026)
+        └── [Month Year] Attendance Record        # Monthly Spreadsheet (e.g., March 2026 Attendance)
+            ├── Monday                            # Daily Timetable Tab
+            ├── Tuesday
+            ├── Wednesday
+            ├── Thursday
+            ├── Friday
+            ├── Saturday
+            └── Sunday
+```
+
+---
+
+### Example of Config Sheet
+
+![Example of Config Sheet](docs/config-sheet.png)
+
+---
+
+### Example of Generated Monthly Sheet
+
+<img src="docs/month-sheet.png" width="400">
+
+---
+
+### Simple to Add New Teacher
+
+<img src="docs/new-teacher.png" width="800">
+
+---
+
 ## System Architecture & Workflow
 
 ```text
@@ -111,6 +148,7 @@ hikvision-attendance-system/
    - **Execute as**: `User deploying the web app`
    - **Who has access**: `Anyone`
 7. Copy the resulting **Web App URL** and replace `APPS_SCRIPT_URL` in `backend/server.js`.
+8. In Apps Script, go to Triggers (alarm clock icon) and click Add Trigger: select generateAttendance as the function to run, set the event source to Time-driven, choose Month timer, and set it to execute on the 1st day of the month between midnight and 1:00 AM.
 
 ---
 
