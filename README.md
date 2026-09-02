@@ -142,7 +142,7 @@ Google Drive Root /
 1. Open your master Configuration Google Sheet.
 2. Navigate to **Extensions > Apps Script**.
 3. Create the script files matching the `apps-script/` folder content (`appsscript.json`, `generateAttendance.gs`, `recordAttendance.gs`, `SheetSetup.gs`).
-4. Copy the **Google Sheets ID** and **Google Drive Root Folder ID** and replace `YOUR_CONFIG_SPREADSHEET_ID` and `YOUR_ROOT_FOLDER_ID` in `generateAttendace.gs` and `recordAttendace.gs`.
+4. Copy the **Google Sheets ID** and **Google Drive Root Folder ID** and replace `YOUR_CONFIG_SPREADSHEET_ID` and `YOUR_ROOT_FOLDER_ID` in `generateAttendance.gs` and `recordAttendance.gs`.
 5. Ensure Advanced Services (**Sheets API v4**, **Drive API v3**) are enabled in the Apps Script project.
 6. Deploy as a Web App:
    - **Execute as**: `User deploying the web app`
@@ -164,7 +164,7 @@ Google Drive Root /
    ```
 3. Start the server:
    ```bash
-   node start
+   npm start
    ```
 
 ---
